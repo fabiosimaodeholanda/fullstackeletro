@@ -1,0 +1,45 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#formas_pagamento {
+color: red;
+}
+
+div#mostrarProdutos {
+width: 80%;
+display: none;
+}
+
+div.box_produtos {
+width: 500px;
+margin: auto;
+
+}
+
+div#produtos {
+width: 80%;
+}
+
+div.categorias{
+width: 200px;
+}
+
+
+
+
+
+.menu {
+    background-color: #ff0000;
+}
+.menu a {
+margin: 10px;
+color: white;
+text-decoration: none;
+}
+
+#rodape {
+    text-align: center;
+}
+
+

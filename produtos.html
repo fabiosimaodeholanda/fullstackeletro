@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF8">
+<title>Produtos - Full Stack Eletro</title>
+<link rel="Stylesheet" href="./css/estilo.css">
+<script src="./js/funcoes.js"></script>
+
+</head>
+
+
+<body>
+    <nav class="menu">
+        <a href="index.html"><img width="100px%" src="./imagens/logo.png" alt="Full Stack Eletro"/></a>
+        <a href="produtos.html">Nossos produtos</a>
+        <a href="loja.html">Nossas lojas</a>
+        <a href="contato.html">Fale conosco</a>
+        </nav>
+<header>
+<h2>Produtos</h2>
+</header>
+<hr>
+
+<section style="display: flex;">
+<div class="categorias">
+<h3><font face="Arial">Categorias</font></h3>
+<ol>
+<li onclick="exibir_todos()"><font>Todos (12)</font></li>
+<li onclick="exibir_categoria('geladeira')"><font>Geladeiras (3)</font></li>
+<li onclick="exibir_categoria('fogao')"><font>Fogões (2)</font></li>
+<li onclick="exibir_categoria('microondas')"><font>Microondas (3)</font></li>
+<li onclick="exibir_categoria('lavadoraderoupas')"><font>Lavadora de roupas (2)</font></li>
+<li onclick="exibir_categoria('lavaloucas')"><font>Lava-louças (2)</font></li>
+</ol>
+</div>
+
+<div id="mostrarProdutos"></div>
+
+<div id="produtos" style="display: flex; flex-wrap: wrap;">
+
+<div class="box_produtos" id="geladeira" style="display: block;">
+<img src="./imagens/Produtos/geladeira brastemp.jpg" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Geladeira Frost Free Brastemp Side Inverse 540 litros</font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 6.389,00</strike></font></p>
+<p class="preco"><font face="Arial" size="4" color="red">R$ 5.019,00</font></p><br>
+</div>
+
+
+<div class="box_produtos" id="geladeira" style="display: block;">
+<img src="./imagens/Produtos/geladeira consul.png" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Geladeira Consul Frost Free Duplex Branco 340 litros</font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 3.350,00</strike></font></p>
+<p class="preo"><font face="Arial" size="4" color="red">R$ 2.750,00</font></p><br>
+</div>
+
+<div class="box_produtos" id="geladeira" style="display: block;">
+<img src="./imagens/Produtos/geladeira electrolux.png" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Geladeira Electrolux Top Free Branco 474 litros</font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 3.350,00</strike></font></p>
+<p class="preco"><font face="Arial" size="4" color="red">R$ 2.900,00</font></p><br>
+</div>
+
+
+<div class="box_produtos" id="fogao" style="display: block;">
+<img src="./imagens/Produtos/fogao brastemp.jpg" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Fogão Brastemp Branco 6 Bocas </font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 2.650,00</strike></font></p>
+<p class="preco"><font face="Arial" size="4" color="red">R$ 2.150,00</font></p><br>
+</div>
+
+<div class="box_produtos" id="fogao" style="display: block;">
+<img src="./imagens/Produtos/fogao consul.png" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Fogão Consul Inox 5 Bocas</font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 1.350,00</strike></font></p>
+<p class="preco"><font face="Arial" size="4" color="red">R$ 1.250,00</font></p><br>
+</div>
+
+<div class="box_produtos" id="microondas" style="display: block;">
+<img src="./imagens/Produtos/micro-ondas brastemp.png" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Micro-ondas Brastemp Inox 20 litros </font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 1.250,00</strike></font></p>
+<p class="preco"><font face="Arial" size="4" color="red">R$ 1.050,00</font></p><br>
+</div>
+
+<div class="box_produtos" id="microondas" style="display: block;">
+<img src="./imagens/Produtos/micro-ondas consul.png" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Micro-ondas Consul Puxador na Porta 20 litros</font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 800,00</strike></font></p>
+<p class="preco"><font face="Arial" size="4" color="red">R$ 600,00</font></p><br>
+</div>
+
+<div class="box_produtos" id="microondas" style="display: block;">
+<img src="./imagens/Produtos/micro-ondas electrolux.jpg" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Micro-ondas Electrolux 20 litros</font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 900,00</strike></font></p>
+<p class="preco"><font face="Arial" size="4" color="red">R$ 500,00</font></p><br>
+</div>
+
+<div class="box_produtos" id="lavadoraderoupas" style="display: block;">
+<img src="./imagens/Produtos/lavadora brastemp.png" width="120px" onclick="destaque(this)">
+<br>
+<font face="Arial" size="2">Lavadora de roupas Brastemp 9kg com Ciclo Tira Manchas e Enxágue Duplo  </font>
+<hr>
+<p class="descricao"><font face="Arial" size="2"><strike>R$ 2.350,00</strike></font></p>
+<p class="preco anterior"><font face="Arial" size="4" color="red">R$ 1.750,00</font></p><br>
+</div>
+
+<div class="box_produtos" id="lavadoraderoupas" style="display: block;">
+<img src="./imagens/Produtos/lavadora consul.jpg" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Lavadora de roupas Consul 9kg Branca</font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 1.350,00</strike></font></p>
+<p class="preco"><font face="Arial" size="4" color="red">R$ 1.050,00</font></p><br>                          
+</div>
+
+<div class="box_produtos" id="lavaloucas" style="display: block;">
+<img src="./imagens/Produtos/lava-louças brastemp.jpg" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Lava-louças Brastemp 14 serviços Inox com Ciclo Pesado</font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 4.350,00</strike></font></p>
+<p class="preco"><font face="Arial" size="4" color="red">R$ 3.950,00</font></p><br>                              
+</div>
+
+<div class="box_produtos" id="lavaloucas" style="display: block;">
+<img src="./imagens/Produtos/lava-louça electrolux.jpg" width="120px" onclick="destaque(this)">
+<br>
+<p class="descricao"><font face="Arial" size="2">Lava-louças Electrolux 14 serviços Inox</font></p>
+<hr>
+<p class="preco anterior"><font face="Arial" size="2"><strike>R$ 6.350,00</strike></font></p>
+<p class="preco"><font face="Arial" size="4" color="red">R$ 5.750,00</font></p><br>                                 
+</div>
+</div>
+</section>
+
+<footer id="rodape">
+    <p id="formas_pagamento"><b>Formas de pagamento:</b></p>
+    <img src="./imagens/formas-pagamento.png" style="width:30%" alt="formas de pagamento"/>
+    <p>&copy; Recode Pro</p>
+    </footer>
+</body>
+</html>
